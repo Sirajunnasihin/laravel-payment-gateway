@@ -2,9 +2,9 @@
 
 namespace Akm\LaravelPaymentGateway;
 
+use Akm\LaravelPaymentGateway\Commands\LaravelPaymentGatewayCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Akm\LaravelPaymentGateway\Commands\LaravelPaymentGatewayCommand;
 
 class LaravelPaymentGatewayServiceProvider extends PackageServiceProvider
 {

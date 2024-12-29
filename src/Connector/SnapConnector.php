@@ -12,9 +12,7 @@ class SnapConnector extends Connector
     use AcceptsJson;
     use HasTimeout;
 
-    public function __construct(private string $serverKey, private bool $isProduction = false)
-    {
-    }
+    public function __construct(private string $serverKey, private bool $isProduction = false) {}
 
     public function resolveBaseUrl(): string
     {

@@ -2,9 +2,9 @@
 
 namespace Akm\LaravelPaymentGateway\Tests;
 
+use Akm\LaravelPaymentGateway\LaravelPaymentGatewayServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Akm\LaravelPaymentGateway\LaravelPaymentGatewayServiceProvider;
 
 class TestCase extends Orchestra
 {
