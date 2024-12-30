@@ -1,6 +1,6 @@
 <?php
 
-namespace Akm\LaravelPaymentGateway\Dto;
+namespace Akm\LaravelPaymentGateway\Midtrans\Dto;
 
 use Spatie\LaravelData\Data;
 
