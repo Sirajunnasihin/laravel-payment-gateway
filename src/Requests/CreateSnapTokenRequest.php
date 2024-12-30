@@ -2,20 +2,21 @@
 
 namespace Akm\LaravelPaymentGateway\Request;
 
+use Akm\Midtrans\Connector\SnapConnector;
+use Akm\Midtrans\Dto\SnapTokenDto;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
-use Akm\Midtrans\Connector\SnapConnector;
-use Akm\Midtrans\Dto\SnapTokenDto;
 use Saloon\Traits\Body\HasJsonBody;
 
 class CreateSnapTokenRequest extends Request
 {
     use HasJsonBody;
-    
+
     protected Method $method = Method::POST;
+
     protected ?string $connector = SnapConnector::class;
-    
+
     protected function defaultHeaders(): array
     {
         return [
@@ -33,7 +34,7 @@ class CreateSnapTokenRequest extends Request
     {
         return [
             'credit_card' => [
-                "secure" => true,
+                'secure' => true,
             ],
         ];
     }

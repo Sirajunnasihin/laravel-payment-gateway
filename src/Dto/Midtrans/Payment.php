@@ -7,5 +7,6 @@ use Spatie\LaravelData\Data;
 class Payment extends Data
 {
     public string $en;
+
     public string $id;
 }
